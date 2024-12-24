@@ -1,0 +1,16 @@
+{"time":"2024-12-23T23:00:04.431967-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-23T23:00:04.432041-05:00","level":"INFO","msg":"created symlink","path":"/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_230004-lcge410c/logs/debug-core.log"}
+{"time":"2024-12-23T23:00:04.539915-05:00","level":"INFO","msg":"created new stream","id":"lcge410c"}
+{"time":"2024-12-23T23:00:04.539958-05:00","level":"INFO","msg":"stream: started","id":"lcge410c"}
+{"time":"2024-12-23T23:00:04.540005-05:00","level":"INFO","msg":"sender: started","stream_id":"lcge410c"}
+{"time":"2024-12-23T23:00:04.539994-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"lcge410c"}
+{"time":"2024-12-23T23:00:04.540038-05:00","level":"INFO","msg":"handler: started","stream_id":"lcge410c"}
+{"time":"2024-12-23T23:00:04.755218-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T23:00:16.827022-05:00","level":"INFO","msg":"stream: closing","id":"lcge410c"}
+{"time":"2024-12-23T23:00:16.827065-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-23T23:00:16.827517-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-23T23:00:17.202547-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-23T23:00:17.332152-05:00","level":"INFO","msg":"handler: closed","stream_id":"lcge410c"}
+{"time":"2024-12-23T23:00:17.332198-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"lcge410c"}
+{"time":"2024-12-23T23:00:17.332353-05:00","level":"INFO","msg":"sender: closed","stream_id":"lcge410c"}
+{"time":"2024-12-23T23:00:17.332364-05:00","level":"INFO","msg":"stream: closed","id":"lcge410c"}

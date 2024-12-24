@@ -1,0 +1,20 @@
+{"time":"2024-12-24T00:01:29.706482-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-24T00:01:29.706504-05:00","level":"INFO","msg":"created symlink","path":"/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241224_000129-z8ftv7vd/logs/debug-core.log"}
+{"time":"2024-12-24T00:01:29.813283-05:00","level":"INFO","msg":"created new stream","id":"z8ftv7vd"}
+{"time":"2024-12-24T00:01:29.813332-05:00","level":"INFO","msg":"stream: started","id":"z8ftv7vd"}
+{"time":"2024-12-24T00:01:29.813342-05:00","level":"INFO","msg":"handler: started","stream_id":"z8ftv7vd"}
+{"time":"2024-12-24T00:01:29.813378-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"z8ftv7vd"}
+{"time":"2024-12-24T00:01:29.813378-05:00","level":"INFO","msg":"sender: started","stream_id":"z8ftv7vd"}
+{"time":"2024-12-24T00:01:29.968444-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-24T00:10:00.499092-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mx-zou-cooper-union-for-advancement-of-science-and-arts/midi_caption_project-src_scripts/z8ftv7vd/file_stream\": read tcp 192.168.1.154:54240->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-12-24T00:10:15.563608-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mx-zou-cooper-union-for-advancement-of-science-and-arts/midi_caption_project-src_scripts/z8ftv7vd/file_stream\": read tcp 192.168.1.154:54246->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-12-24T00:10:18.2012-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mx-zou-cooper-union-for-advancement-of-science-and-arts/midi_caption_project-src_scripts/z8ftv7vd/file_stream\": read tcp 192.168.1.154:54247->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-12-24T00:10:22.854568-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mx-zou-cooper-union-for-advancement-of-science-and-arts/midi_caption_project-src_scripts/z8ftv7vd/file_stream\": read tcp 192.168.1.154:54248->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2024-12-24T00:31:23.532905-05:00","level":"INFO","msg":"stream: closing","id":"z8ftv7vd"}
+{"time":"2024-12-24T00:31:23.533069-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-24T00:31:23.534589-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-24T00:31:23.87958-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-24T00:31:24.003563-05:00","level":"INFO","msg":"handler: closed","stream_id":"z8ftv7vd"}
+{"time":"2024-12-24T00:31:24.003808-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"z8ftv7vd"}
+{"time":"2024-12-24T00:31:24.004711-05:00","level":"INFO","msg":"sender: closed","stream_id":"z8ftv7vd"}
+{"time":"2024-12-24T00:31:24.004926-05:00","level":"INFO","msg":"stream: closed","id":"z8ftv7vd"}

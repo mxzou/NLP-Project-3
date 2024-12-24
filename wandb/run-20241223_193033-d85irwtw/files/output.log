@@ -1,0 +1,37 @@
+Loading model...
+model.safetensors: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 892M/892M [00:23<00:00, 37.5MB/s]
+generation_config.json: 100%|██████████████████████| 147/147 [00:00<00:00, 1.39MB/s]
+2024-12-23 19:30:58,834 - src.training.trainer - INFO - Model successfully moved to cpu
+2024-12-23 19:30:58,835 - src.training.trainer - INFO - Using default AdamW optimizer
+Starting training...
+2024-12-23 19:30:58,836 - src.training.trainer - INFO - Starting epoch 1/10
+Epoch 1:   0%|                                               | 0/13 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+Epoch 1: 100%|█████████████████████████| 13/13 [04:38<00:00, 21.39s/it, loss=9.2275]
+2024-12-23 19:35:36,867 - src.training.trainer - INFO - Epoch 1 completed with loss: 9.2275
+2024-12-23 19:35:36,867 - src.training.trainer - INFO - Starting epoch 2/10
+Epoch 2: 100%|█████████████████████████| 13/13 [04:39<00:00, 21.53s/it, loss=1.2416]
+2024-12-23 19:40:16,790 - src.training.trainer - INFO - Epoch 2 completed with loss: 1.2416
+2024-12-23 19:40:16,791 - src.training.trainer - INFO - Starting epoch 3/10
+Epoch 3: 100%|█████████████████████████| 13/13 [04:40<00:00, 21.56s/it, loss=0.1829]
+2024-12-23 19:44:57,083 - src.training.trainer - INFO - Epoch 3 completed with loss: 0.1829
+2024-12-23 19:44:57,084 - src.training.trainer - INFO - Starting epoch 4/10
+Epoch 4: 100%|█████████████████████████| 13/13 [04:41<00:00, 21.64s/it, loss=0.0757]
+2024-12-23 19:49:38,388 - src.training.trainer - INFO - Epoch 4 completed with loss: 0.0757
+2024-12-23 19:49:38,389 - src.training.trainer - INFO - Starting epoch 5/10
+Epoch 5: 100%|█████████████████████████| 13/13 [04:40<00:00, 21.61s/it, loss=0.0506]
+2024-12-23 19:54:19,322 - src.training.trainer - INFO - Epoch 5 completed with loss: 0.0506
+2024-12-23 19:54:19,322 - src.training.trainer - INFO - Starting epoch 6/10
+Epoch 6: 100%|█████████████████████████| 13/13 [04:41<00:00, 21.67s/it, loss=0.0374]
+2024-12-23 19:59:00,985 - src.training.trainer - INFO - Epoch 6 completed with loss: 0.0374
+2024-12-23 19:59:00,985 - src.training.trainer - INFO - Starting epoch 7/10
+Epoch 7: 100%|█████████████████████████| 13/13 [04:41<00:00, 21.63s/it, loss=0.0263]
+2024-12-23 20:03:42,222 - src.training.trainer - INFO - Epoch 7 completed with loss: 0.0263
+2024-12-23 20:03:42,223 - src.training.trainer - INFO - Starting epoch 8/10
+Epoch 8: 100%|█████████████████████████| 13/13 [04:40<00:00, 21.56s/it, loss=0.0200]
+2024-12-23 20:08:22,552 - src.training.trainer - INFO - Epoch 8 completed with loss: 0.0200
+2024-12-23 20:08:22,552 - src.training.trainer - INFO - Starting epoch 9/10
+Epoch 9: 100%|█████████████████████████| 13/13 [04:40<00:00, 21.59s/it, loss=0.0104]
+2024-12-23 20:13:03,171 - src.training.trainer - INFO - Epoch 9 completed with loss: 0.0104
+2024-12-23 20:13:03,171 - src.training.trainer - INFO - Starting epoch 10/10
+Epoch 10: 100%|████████████████████████| 13/13 [04:47<00:00, 22.08s/it, loss=0.0060]
+2024-12-23 20:17:50,219 - src.training.trainer - INFO - Epoch 10 completed with loss: 0.0060

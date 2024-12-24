@@ -1,0 +1,18 @@
+{
+  "os": "macOS-14.0-arm64-arm-64bit",
+  "python": "CPython 3.11.11",
+  "startedAt": "2024-12-24T01:50:55.851731Z",
+  "args": [
+    "--sweep_id",
+    "zo8kwi1i",
+    "--num_trials",
+    "5"
+  ],
+  "program": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/experiments/hyperparameter_search.py",
+  "codePath": "src/experiments/hyperparameter_search.py",
+  "email": "mengxuan.zou@cooper.edu",
+  "root": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project",
+  "host": "s3niksMacStudio",
+  "executable": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/bin/python",
+  "codePathLocal": "src/experiments/hyperparameter_search.py"
+}

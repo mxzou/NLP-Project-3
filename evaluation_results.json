@@ -1,0 +1,44 @@
+[
+  {
+    "test_case": {
+      "key": "C major",
+      "tempo": 120,
+      "genre": [
+        "classical"
+      ],
+      "mood": [
+        "peaceful"
+      ]
+    },
+    "generated_caption": "A brief and tranquil Classical composition, set in the key of C major. The chord progression is followed by a short but powerful chord sequence that evokes a sense of peace or relaxation throughout its duration. This compositional style could be used to create music from an ambient soundtrack such as a song about an acoustic guitar or a piano lead. The piece has been recorded at 120 BPM with a 4th fret on the key, making it suitable for use within a classical setting. With the chords being preceded by a brief but powerful melody line over a duration of."
+  },
+  {
+    "test_case": {
+      "key": "D minor",
+      "tempo": 140,
+      "genre": [
+        "jazz",
+        "fusion"
+      ],
+      "mood": [
+        "energetic",
+        "complex"
+      ]
+    },
+    "generated_caption": "A lively and powerful Jazz saxophone piece featuring a fusion of fusion elements. This dynamic composition is set in D minor at a tempo of 140 beats per minute and follows a chord progression that's as challenging to master as it is engaging. Set in the key of D major or G major, this dynamic fusion soundtrack unfolds through an interplay between the chords D7-F#maj9/G8, C7-Bb6s, and D5-Dgf/C7. The melody evokes complex tones."
+  },
+  {
+    "test_case": {
+      "key": "F# major",
+      "tempo": 200,
+      "genre": [
+        "experimental"
+      ],
+      "mood": [
+        "intense",
+        "avant-garde"
+      ]
+    },
+    "generated_caption": "A melodic experimental piece featuring a synth melody and a chord progression of F# minor. The composition evokes an atmosphere that is set to an energetic tempo in the key of 20 beats per minute while maintaining a recurring chord sequence of F/Dm7. This soundscape has been described as \"an epic mix between rock and electronic,\" adding a touch of depth to the composition's atmospheric charm. Set in the Key of F*major at a moderate tempo, the piece maintains a continuous chord progression throughout its duration."
+  }
+]

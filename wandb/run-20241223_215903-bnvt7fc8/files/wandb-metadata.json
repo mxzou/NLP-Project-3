@@ -1,0 +1,12 @@
+{
+  "os": "macOS-14.0-arm64-arm-64bit",
+  "python": "CPython 3.11.11",
+  "startedAt": "2024-12-24T02:59:03.589049Z",
+  "program": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/scripts/run_sweep.py",
+  "codePath": "src/scripts/run_sweep.py",
+  "email": "mengxuan.zou@cooper.edu",
+  "root": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project",
+  "host": "s3niksMacStudio",
+  "executable": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/bin/python",
+  "codePathLocal": "src/scripts/run_sweep.py"
+}

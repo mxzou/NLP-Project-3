@@ -1,0 +1,126 @@
+Starting training run with config:
+Learning rate: 0.0001
+Batch size: 8
+LoRA r: 16
+
+=== Initialization Phase ===
+1. Loading model and tokenizer...
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/transformers/modeling_utils.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(checkpoint_file, map_location=map_location)
+✓ Model loaded successfully
+
+2. Configuring LoRA...
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+✓ LoRA configured
+
+3. Loading dataset...
+Loading train split from MIDICAPS dataset...
+Traceback (most recent call last):
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/datasets/amaai-lab/MidiCaps/resolve/84d5b132f2776cc5276455fe90982b4ff768a6f5/MIDICAPS.py
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/load.py", line 1647, in dataset_module_factory
+    dataset_script_path = api.hf_hub_download(
+                          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 5252, in hf_hub_download
+    return hf_hub_download(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 860, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 923, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, head_call_error) = _get_metadata_or_catch_error(
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1374, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 1294, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 297, in _request_wrapper
+    return _request_wrapper(method=method, url=next_url, follow_relative_redirects=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 278, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py", line 302, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 417, in hf_raise_for_status
+    raise _format(EntryNotFoundError, message, response) from e
+huggingface_hub.errors.EntryNotFoundError: 404 Client Error. (Request ID: Root=1-676a489c-5e0c1049677d076101a0ded8;70bf32df-64c8-48bb-a4a8-dceec7e25825)
+
+Entry Not Found for url: https://huggingface.co/datasets/amaai-lab/MidiCaps/resolve/84d5b132f2776cc5276455fe90982b4ff768a6f5/MIDICAPS.py.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/scripts/run_sweep.py", line 45, in <module>
+    main()
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/scripts/run_sweep.py", line 31, in main
+    model = train_model(
+            ^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/training/trainer.py", line 264, in train_model
+    train_dataset = MIDICAPSDataset(split='train', max_samples=max_samples)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/data/loader.py", line 22, in __init__
+    self.dataset = load_dataset("AMAAI-Lab/MIDICAPS", split=split)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/load.py", line 2129, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/load.py", line 1849, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/load.py", line 1696, in dataset_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/load.py", line 1067, in get_module
+    data_files = DataFilesDict.from_patterns(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/data_files.py", line 721, in from_patterns
+    else DataFilesList.from_patterns(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/data_files.py", line 634, in from_patterns
+    origin_metadata = _get_origin_metadata(data_files, download_config=download_config)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/datasets/data_files.py", line 548, in _get_origin_metadata
+    return thread_map(
+           ^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/tqdm/std.py", line 1169, in __iter__
+    for obj in iterable:
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/threading.py", line 327, in wait
+    waiter.acquire()
+KeyboardInterrupt

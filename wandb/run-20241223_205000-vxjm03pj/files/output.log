@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/experiments/hyperparameter_search.py", line 22, in train_with_config
+    config.training.batch_size = sweep_config.batch_size
+                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/wandb/sdk/lib/preinit.py", line 27, in __getattr__
+    raise wandb.Error(f"You must call wandb.init() before {self._name}.{key}")
+wandb.errors.errors.Error: You must call wandb.init() before wandb.config.batch_size

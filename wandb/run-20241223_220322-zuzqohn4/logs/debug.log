@@ -1,0 +1,18 @@
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_setup.py:_flush():68] Configure stats pid to 3509
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_setup.py:_flush():68] Loading settings from /Users/s3nik/.config/wandb/settings
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_setup.py:_flush():68] Loading settings from /Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/settings
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_init.py:_log_setup():528] Logging user logs to /Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_220322-zuzqohn4/logs/debug.log
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_220322-zuzqohn4/logs/debug-internal.log
+2024-12-23 22:03:22,396 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():644] calling init triggers
+2024-12-23 22:03:22,397 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():650] wandb.init called with sweep_config: {'batch_size': 16, 'learning_rate': 8.515331443417877e-05, 'lora_alpha': 32, 'lora_dropout': 0.1, 'lora_r': 8, 'max_samples': 1000, 'num_epochs': 5}
+config: {}
+2024-12-23 22:03:22,397 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():680] starting backend
+2024-12-23 22:03:22,397 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():684] sending inform_init request
+2024-12-23 22:03:22,399 INFO    Thread-9 (_run_job):3509 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-12-23 22:03:22,399 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():697] backend started and connected
+2024-12-23 22:03:22,399 INFO    Thread-9 (_run_job):3509 [wandb_run.py:_config_callback():1279] config_cb None None {'batch_size': 16, 'learning_rate': 8.515331443417877e-05, 'lora_alpha': 32, 'lora_dropout': 0.1, 'lora_r': 8, 'max_samples': 1000, 'num_epochs': 5}
+2024-12-23 22:03:22,401 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():790] updated telemetry
+2024-12-23 22:03:22,402 INFO    Thread-9 (_run_job):3509 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2024-12-23 22:03:22,509 WARNING MsgRouterThr:3509 [router.py:message_loop():75] message_loop has been closed

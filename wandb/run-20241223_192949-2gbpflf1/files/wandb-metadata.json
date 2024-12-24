@@ -1,0 +1,22 @@
+{
+  "os": "macOS-14.0-arm64-arm-64bit",
+  "python": "CPython 3.11.11",
+  "startedAt": "2024-12-24T00:29:49.418079Z",
+  "args": [
+    "--batch_size",
+    "8",
+    "--epochs",
+    "10",
+    "--max_samples",
+    "5000",
+    "--wandb_project",
+    "midi-caption"
+  ],
+  "program": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/main.py",
+  "codePath": "src/main.py",
+  "email": "mengxuan.zou@cooper.edu",
+  "root": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project",
+  "host": "s3niksMacStudio",
+  "executable": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/bin/python",
+  "codePathLocal": "src/main.py"
+}

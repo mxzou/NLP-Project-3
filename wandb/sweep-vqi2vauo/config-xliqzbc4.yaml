@@ -1,0 +1,16 @@
+wandb_version: 1
+
+batch_size:
+  value: 4
+learning_rate:
+  value: 5.518009140985186e-05
+lora_alpha:
+  value: 16
+lora_dropout:
+  value: 0.2
+lora_r:
+  value: 8
+max_samples:
+  value: 1000
+num_epochs:
+  value: 3

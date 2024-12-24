@@ -1,0 +1,39 @@
+{
+  "os": "macOS-14.0-arm64-arm-64bit",
+  "python": "CPython 3.11.11",
+  "startedAt": "2024-12-24T04:00:04.429941Z",
+  "program": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/scripts/run_sweep.py",
+  "codePath": "src/scripts/run_sweep.py",
+  "email": "mengxuan.zou@cooper.edu",
+  "root": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project",
+  "host": "s3niksMacStudio",
+  "executable": "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/bin/python",
+  "codePathLocal": "src/scripts/run_sweep.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 10,
+  "disk": {
+    "/": {
+      "total": "994662584320",
+      "used": "986602291200"
+    },
+    "/System/Volumes/Data": {
+      "total": "994662584320",
+      "used": "986602291200"
+    }
+  },
+  "memory": {
+    "total": "34359738368"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 10
+  },
+  "apple": {
+    "name": "Apple M1 Max",
+    "ecpuCores": 2,
+    "pcpuCores": 8,
+    "gpuCores": 32,
+    "memoryGb": 32,
+    "ramTotalBytes": "34359738368"
+  }
+}

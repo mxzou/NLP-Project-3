@@ -1,0 +1,30 @@
+2024-12-23 23:01:25,968 INFO    Thread-2 (_run_job):6933 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2024-12-23 23:01:25,968 INFO    Thread-2 (_run_job):6933 [wandb_setup.py:_flush():68] Configure stats pid to 6933
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_setup.py:_flush():68] Loading settings from /Users/s3nik/.config/wandb/settings
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_setup.py:_flush():68] Loading settings from /Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/settings
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_init.py:_log_setup():528] Logging user logs to /Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_230125-r9ll6ykj/logs/debug.log
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_230125-r9ll6ykj/logs/debug-internal.log
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():644] calling init triggers
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():650] wandb.init called with sweep_config: {'batch_size': 8, 'learning_rate': 9.183181480908496e-05, 'lora_alpha': 16, 'lora_dropout': 0.1, 'lora_r': 16, 'max_samples': 500, 'num_epochs': 3}
+config: {}
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():680] starting backend
+2024-12-23 23:01:25,969 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():684] sending inform_init request
+2024-12-23 23:01:26,021 INFO    Thread-2 (_run_job):6933 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-12-23 23:01:26,021 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():697] backend started and connected
+2024-12-23 23:01:26,022 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_config_callback():1279] config_cb None None {'batch_size': 8, 'learning_rate': 9.183181480908496e-05, 'lora_alpha': 16, 'lora_dropout': 0.1, 'lora_r': 16, 'max_samples': 500, 'num_epochs': 3}
+2024-12-23 23:01:26,024 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():790] updated telemetry
+2024-12-23 23:01:26,025 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2024-12-23 23:01:26,249 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():874] starting run threads in backend
+2024-12-23 23:01:26,295 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_console_start():2374] atexit reg
+2024-12-23 23:01:26,295 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_redirect():2224] redirect: wrap_raw
+2024-12-23 23:01:26,296 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_redirect():2289] Wrapping output streams.
+2024-12-23 23:01:26,296 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_redirect():2314] Redirects installed.
+2024-12-23 23:01:26,297 INFO    Thread-2 (_run_job):6933 [wandb_init.py:init():916] run started, returning control to user process
+2024-12-23 23:08:05,078 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_finish():2100] finishing run mx-zou-cooper-union-for-advancement-of-science-and-arts/midi-caption/r9ll6ykj
+2024-12-23 23:08:05,087 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_atexit_cleanup():2339] got exitcode: 0
+2024-12-23 23:08:05,088 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_restore():2321] restore
+2024-12-23 23:08:05,090 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_restore():2327] restore done
+2024-12-23 23:08:06,737 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_footer_history_summary_info():3892] rendering history
+2024-12-23 23:08:06,739 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_footer_history_summary_info():3924] rendering summary
+2024-12-23 23:08:06,761 INFO    Thread-2 (_run_job):6933 [wandb_run.py:_footer_sync_info():3853] logging synced files

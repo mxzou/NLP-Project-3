@@ -1,0 +1,17 @@
+{"time":"2024-12-23T21:58:58.434086-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-23T21:58:58.434129-05:00","level":"INFO","msg":"created symlink","path":"/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_215858-aje2i7if/logs/debug-core.log"}
+{"time":"2024-12-23T21:58:58.545913-05:00","level":"INFO","msg":"created new stream","id":"aje2i7if"}
+{"time":"2024-12-23T21:58:58.54595-05:00","level":"INFO","msg":"stream: started","id":"aje2i7if"}
+{"time":"2024-12-23T21:58:58.546129-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"aje2i7if"}
+{"time":"2024-12-23T21:58:58.546368-05:00","level":"INFO","msg":"sender: started","stream_id":"aje2i7if"}
+{"time":"2024-12-23T21:58:58.546373-05:00","level":"INFO","msg":"handler: started","stream_id":"aje2i7if"}
+{"time":"2024-12-23T21:58:58.70786-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T21:58:58.880169-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-23T21:58:58.880794-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-23T21:58:59.885551-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.041850917}],"total_operations":1}}
+{"time":"2024-12-23T21:59:00.291354-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-23T21:59:01.46784-05:00","level":"INFO","msg":"stream: closing","id":"aje2i7if"}
+{"time":"2024-12-23T21:59:01.467875-05:00","level":"INFO","msg":"handler: closed","stream_id":"aje2i7if"}
+{"time":"2024-12-23T21:59:01.467891-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"aje2i7if"}
+{"time":"2024-12-23T21:59:01.467905-05:00","level":"INFO","msg":"sender: closed","stream_id":"aje2i7if"}
+{"time":"2024-12-23T21:59:01.468174-05:00","level":"INFO","msg":"stream: closed","id":"aje2i7if"}

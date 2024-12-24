@@ -1,0 +1,17 @@
+{"time":"2024-12-23T22:07:07.933591-05:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2024-12-23T22:07:07.933627-05:00","level":"INFO","msg":"created symlink","path":"/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/wandb/run-20241223_220707-r3j8idj5/logs/debug-core.log"}
+{"time":"2024-12-23T22:07:08.040548-05:00","level":"INFO","msg":"created new stream","id":"r3j8idj5"}
+{"time":"2024-12-23T22:07:08.040602-05:00","level":"INFO","msg":"stream: started","id":"r3j8idj5"}
+{"time":"2024-12-23T22:07:08.040633-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"r3j8idj5"}
+{"time":"2024-12-23T22:07:08.040654-05:00","level":"INFO","msg":"sender: started","stream_id":"r3j8idj5"}
+{"time":"2024-12-23T22:07:08.040719-05:00","level":"INFO","msg":"handler: started","stream_id":"r3j8idj5"}
+{"time":"2024-12-23T22:07:08.164985-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T22:11:34.05764-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-23T22:11:34.057997-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-23T22:11:34.517015-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-23T22:11:34.753939-05:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2024-12-23T22:11:35.768844-05:00","level":"INFO","msg":"stream: closing","id":"r3j8idj5"}
+{"time":"2024-12-23T22:11:35.768859-05:00","level":"INFO","msg":"handler: closed","stream_id":"r3j8idj5"}
+{"time":"2024-12-23T22:11:35.768868-05:00","level":"INFO","msg":"sender: closed","stream_id":"r3j8idj5"}
+{"time":"2024-12-23T22:11:35.768869-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"r3j8idj5"}
+{"time":"2024-12-23T22:11:35.769003-05:00","level":"INFO","msg":"stream: closed","id":"r3j8idj5"}

@@ -1,0 +1,28 @@
+Loading model and tokenizer from facebook/opt-350m...
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+config.json: 100%|█████████████████████████████████| 644/644 [00:00<00:00, 1.04MB/s]
+pytorch_model.bin: 100%|█████████████████████████| 663M/663M [00:17<00:00, 37.0MB/s]
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/transformers/modeling_utils.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(checkpoint_file, map_location=map_location)
+generation_config.json: 100%|██████████████████████| 137/137 [00:00<00:00, 1.90MB/s]
+tokenizer_config.json: 100%|███████████████████████| 685/685 [00:00<00:00, 8.35MB/s]
+vocab.json: 100%|████████████████████████████████| 899k/899k [00:00<00:00, 5.44MB/s]
+merges.txt: 100%|████████████████████████████████| 456k/456k [00:00<00:00, 17.3MB/s]
+special_tokens_map.json: 100%|██████████████████████| 441/441 [00:00<00:00, 471kB/s]
+Model loaded successfully!
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/bitsandbytes/cextension.py:34: UserWarning: The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+  warn("The installed version of bitsandbytes was compiled without GPU support. "
+'NoneType' object has no attribute 'cadam32bit_grad_fp32'
+trainable params: 1,179,648 || all params: 332,376,064 || trainable%: 0.3549136438416937
+2024-12-23 22:03:12,366 - datasets - INFO - PyTorch version 2.5.1 available.
+Error in training: MIDICAPSDataset.__init__() missing 1 required positional argument: 'data_path'
+Traceback (most recent call last):
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/scripts/run_sweep.py", line 12, in train_function
+    train_model(
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/training/trainer.py", line 315, in train_model
+    raise e
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/training/trainer.py", line 220, in train_model
+    train_dataset = MIDICAPSDataset(split='train', max_samples=max_samples)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MIDICAPSDataset.__init__() missing 1 required positional argument: 'data_path'

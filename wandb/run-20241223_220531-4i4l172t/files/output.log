@@ -1,0 +1,54 @@
+Loading model and tokenizer from facebook/opt-350m...
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/transformers/modeling_utils.py:519: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return torch.load(checkpoint_file, map_location=map_location)
+Model loaded successfully!
+trainable params: 2,359,296 || all params: 333,555,712 || trainable%: 0.7073169234169793
+Loading MIDICAPS dataset from Hugging Face...
+Loading train split from MIDICAPS dataset...
+Loaded 1000 samples from train set
+Epoch 1/3:   0%|                                             | 0/63 [00:02<?, ?it/s]
+Error in training: Expected input batch_size (1552) to match target batch_size (1680).
+Traceback (most recent call last):
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/scripts/run_sweep.py", line 12, in train_function
+    train_model(
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/training/trainer.py", line 317, in train_model
+    raise e
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/src/training/trainer.py", line 280, in train_model
+    outputs = model(
+              ^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/peft/peft_model.py", line 1073, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/peft/tuners/tuners_utils.py", line 103, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/transformers/models/opt/modeling_opt.py", line 1166, in forward
+    loss = loss_fct(shift_logits.view(-1, self.config.vocab_size), shift_labels.view(-1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/modules/loss.py", line 1293, in forward
+    return F.cross_entropy(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/s3nik/Desktop/nlp-project-3/midi_caption_project/venv/lib/python3.11/site-packages/torch/nn/functional.py", line 3479, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Expected input batch_size (1552) to match target batch_size (1680).
